@@ -5,13 +5,13 @@
 class Focus < Formula
   desc "Focus is a command-line productivity timer based on the Pomodoro Technique"
   homepage "https://focus.freshman.tech"
-  version "1.4.0"
+  version "1.4.1"
   depends_on :linux
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/ayoisaiah/focus/releases/download/v1.4.0/focus_1.4.0_linux_amd64.tar.gz"
-      sha256 "0d1b010e70d6e2ebeb560aae0e917abfe27065a75100e5ec4920f4dab0ba270b"
+      url "https://github.com/ayoisaiah/focus/releases/download/v1.4.1/focus_1.4.1_linux_amd64.tar.gz"
+      sha256 "9d9699304e0b3a14b05315b301772915f718bf8e42056357b4cd25376d6f288e"
 
       def install
         bin.install "focus"
