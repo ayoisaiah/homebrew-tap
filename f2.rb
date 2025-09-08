@@ -5,22 +5,22 @@
 class F2 < Formula
   desc "F2 is a cross-platform command-line tool for batch renaming files and directories quickly and safely"
   homepage "https://f2.freshman.tech"
-  version "2.1.2"
+  version "2.2.0"
 
   depends_on "exiftool" => :optional
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ayoisaiah/f2/releases/download/v2.1.2/f2_2.1.2_darwin_amd64.tar.gz"
-      sha256 "4463d3d5d137d5ddb94f7cbfece7d35b4c0950c56e151f980d07306a49a5ad30"
+      url "https://github.com/ayoisaiah/f2/releases/download/v2.2.0/f2_2.2.0_darwin_amd64.tar.gz"
+      sha256 "b9a2b8f58f96991f4d4bc08cdfe66cd9f46d17573b00f9e48889991c2ad01957"
 
       def install
         bin.install "f2"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ayoisaiah/f2/releases/download/v2.1.2/f2_2.1.2_darwin_arm64.tar.gz"
-      sha256 "4f70b60248ab4293a4f34e79a17e353284bd93e386089a0242914830b7e1b2b3"
+      url "https://github.com/ayoisaiah/f2/releases/download/v2.2.0/f2_2.2.0_darwin_arm64.tar.gz"
+      sha256 "66f6931ccaa6612ae05f7adb240a58f4de25e97e498d3dcad6dc285429eafb10"
 
       def install
         bin.install "f2"
@@ -29,16 +29,16 @@ class F2 < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/ayoisaiah/f2/releases/download/v2.1.2/f2_2.1.2_linux_amd64.tar.gz"
-      sha256 "06b3ee1209ced9bcf8c471925118ca01a119d191007c9e698fc18082155ea148"
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ayoisaiah/f2/releases/download/v2.2.0/f2_2.2.0_linux_amd64.tar.gz"
+      sha256 "03d41c18d8bd86662ae16c4b3deeac2f782b2043f611d8baee9b3858538ff905"
       def install
         bin.install "f2"
       end
     end
-    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/ayoisaiah/f2/releases/download/v2.1.2/f2_2.1.2_linux_arm64.tar.gz"
-      sha256 "825b5485ee6904415ec712b3e67cc77ae9e8be3421d3f469b9509a34121669c9"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ayoisaiah/f2/releases/download/v2.2.0/f2_2.2.0_linux_arm64.tar.gz"
+      sha256 "17c689736ffc39278a3efaf27cd8a987bf7f1f40efaa84e2388bb8ac9baf45f5"
       def install
         bin.install "f2"
       end
