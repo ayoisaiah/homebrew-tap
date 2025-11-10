@@ -5,22 +5,22 @@
 class F2 < Formula
   desc "F2 is a cross-platform command-line tool for batch renaming files and directories quickly and safely"
   homepage "https://f2.freshman.tech"
-  version "2.2.1"
+  version "2.2.2"
 
   depends_on "exiftool" => :optional
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ayoisaiah/f2/releases/download/v2.2.1/f2_2.2.1_darwin_amd64.tar.gz"
-      sha256 "57e79132b466be61c2de223388bc5aa55db296f358fe2e1ca5f2f8e3f31cf6a0"
+      url "https://github.com/ayoisaiah/f2/releases/download/v2.2.2/f2_2.2.2_darwin_amd64.tar.gz"
+      sha256 "2a037a55f25ee6c083af38ce3aafce885ecedfb13b17c867c2dc930320b5fae5"
 
       def install
         bin.install "f2"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ayoisaiah/f2/releases/download/v2.2.1/f2_2.2.1_darwin_arm64.tar.gz"
-      sha256 "5c7fe3e5f61c2e41ab7a13270848b0068cc76ebbae2fc6777340b2ca2190203f"
+      url "https://github.com/ayoisaiah/f2/releases/download/v2.2.2/f2_2.2.2_darwin_arm64.tar.gz"
+      sha256 "18d7cf76719b335b1b12ec7605b89637d6d832ec196beca9a0436e270252dd8c"
 
       def install
         bin.install "f2"
@@ -30,15 +30,15 @@ class F2 < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ayoisaiah/f2/releases/download/v2.2.1/f2_2.2.1_linux_amd64.tar.gz"
-      sha256 "b5fb1b3250333af7581b761dac8945eb892bd349764cc243b5db62226819566a"
+      url "https://github.com/ayoisaiah/f2/releases/download/v2.2.2/f2_2.2.2_linux_amd64.tar.gz"
+      sha256 "d44bca9d9a08721655e0fd4a3459f4c2b844abb896de3e6a74551e8bf5f51432"
       def install
         bin.install "f2"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ayoisaiah/f2/releases/download/v2.2.1/f2_2.2.1_linux_arm64.tar.gz"
-      sha256 "9ab09333bbef8579e7fac3b2f8e47a0a6c9946114b113d5527528d0ce9c1b519"
+      url "https://github.com/ayoisaiah/f2/releases/download/v2.2.2/f2_2.2.2_linux_arm64.tar.gz"
+      sha256 "65a38d8fe73a386d86f5163235ba3df04fc6cd45f73a6f67bf90ea02f1b9abfd"
       def install
         bin.install "f2"
       end
